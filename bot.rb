@@ -9,9 +9,9 @@ require './heroku'
 # Feel free to change the name of the bot here - this controls what name the bot
 # uses when responding.
 if ARGV.first == 'heroku'
-  bot = HerokuSlackAdapter.new(nick: 'echobot')
+  bot = HerokuSlackAdapter.new(nick: 'Capt. Pedantry')
 else
-  bot = ChatAdapter::Shell.new(nick: 'echobot')
+  bot = ChatAdapter::Shell.new(nick: 'Capt. Pedantry')
 end
 
 # Feel free to ignore this - makes logging easier

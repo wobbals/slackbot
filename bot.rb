@@ -24,6 +24,9 @@ bot.on_message do |message, info|
   /(?<!\/)\bOPENTOK\-\d*\b/.match(message) { |issueid|
     result = "Did you mean https://jira.tokbox.com/browse/#{issueid} ?"
   }
+  if (nil == result) && ("F".eql? message)
+    result = "http://i.imgur.com/r8ju8lr.png"
+  end
   result
 end
 
